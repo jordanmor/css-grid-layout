@@ -3,10 +3,9 @@
 ======================================== */
 
 .grid {
-	max-width: 800px;
+	max-width: 1000px;
 	display: grid;
-	grid-template-columns: 200px auto 200px;
-	grid-template-rows: 100px 200px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: repeat(2, 200px);
 	grid-gap: 15px;
-	
 }
